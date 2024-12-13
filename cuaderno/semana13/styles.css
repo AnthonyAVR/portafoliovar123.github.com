@@ -1,0 +1,133 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #09077a;
+    padding-top: 60px; /* Para evitar que el contenido quede debajo del header */
+}
+
+/* Estilos del Header y Navegación */
+header {
+    background: #42cfc3;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Sección de Bienvenida */
+#welcome-container, .welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para darle profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px auto;
+    max-width: 1200px; /* Limitar el ancho máximo */
+}
+
+.profile-pic {
+    position: relative;
+    margin-right: 30px;
+    text-align: center;
+    flex: 1 1 400px;
+}
+
+.profile-pic img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+    border-radius: 8px;
+}
+
+.intro-text {
+    max-width: 600px;
+    text-align: justify;
+    flex: 2 1 600px;
+}
+
+.intro-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Sección de Botón */
+.btn-volver {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Estilos de Responsividad */
+@media (max-width: 768px) {
+    .welcome-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+}

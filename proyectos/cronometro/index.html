@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro Galáctico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cronómetro Galáctico</h1>
+    <div class="timer-container">
+        <h2 id="timer">00:00</h2>
+        <div class="time-inputs">
+            <input type="number" id="minutesInput" placeholder="Minutos" min="0">
+            <input type="number" id="secondsInput" placeholder="Segundos" min="0" max="59">
+        </div>
+        <div class="button-container">
+            <button id="startCountdownButton">Iniciar Cuenta Regresiva</button>
+            <button id="startTimerButton">Iniciar Cronómetro</button>
+            <button id="stopButton">Detener</button>
+            <button id="resetButton">Reiniciar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
